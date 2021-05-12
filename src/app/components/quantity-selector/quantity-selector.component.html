@@ -1,0 +1,15 @@
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Quantity Selector Button:</h5>
+    </div>
+    <div class="col-sm-12 mb-12">
+          <button class="btn btn-success" (click)="increment()"><i class="fa fa-plus"></i></button>
+        
+            <input type="text" class="form-control" [(ngModel)]="inputVal">
+        
+            <button class="btn btn-primary" [disabled]="disableBtn" (click)="decrement()"><i class="fa fa-minus"></i></button>
+        
+    </div>
+  </div>
+</div>
